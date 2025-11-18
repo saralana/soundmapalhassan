@@ -119,7 +119,4 @@ map.on('mouseleave', 'csvData', () => {
     map.getCanvas().style.cursor = '';
 });
 
-window.addEventListener("resize", () => {
-    location.reload(); // reloads the current page if the window is resized
-});
 //   ____________________________  END OFELEMENTS ON BOTH MAPS  ____________________________ 

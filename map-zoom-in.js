@@ -123,7 +123,7 @@ function makeGeoJSON(csvData) {
                                             <div style="width:100%;">                                            
                                             <iframe width="100%" height="100%" 
                                             src="https://www.youtube.com/embed/` + e.features[0].properties.videoID + 
-                                            `?autoplay=1&modestbranding=1&showinfo=0&modestbranding=1&rel=0&color=white&iv_load_policy=3&loop=1&playlist=` + e.features[0].properties.videoID + 
+                                            `?autoplay=1&modestbranding=1&showinfo=0&modestbranding=1&rel=0&color=white&iv_load_policy=3&loop=1&playlist=` + e.features[0].properties.videoID + e.features[0].properties.subtitles + 
                                             `"frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                                             allowfullscreen></iframe>   
                                             </div>
@@ -296,7 +296,7 @@ function makeGeoJSON(csvData) {
             paint: {
                 'text-color': '#000'
             },
-            minzoom: 15.5,
+            minzoom: 15,
             maxzoom: 20
             });
         });
